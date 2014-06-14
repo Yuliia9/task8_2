@@ -1,6 +1,6 @@
 
 /**
-*@file		task8_1.h
+*@file		task8_2.h
 *@brief		header file that defines prototypes of functions used in file task8_1.cpp
 */
 
@@ -18,7 +18,7 @@
 void Interface(void);
 
 /**
-* @brief				This function checks if string is string is a positive number
+* @brief				This function checks if string is a positive number
 * @param	void
 * @return	void
 */

@@ -51,13 +51,13 @@ void Store::Shopping(vector<Shoe>& storage, unsigned int n)
 	while (true)
 	{
 		customer = rand() % n;
-		srand(n);
+		srand(time(NULL));
 		if (buyers[customer].GetNumPurchase() < POSSIBLY_NUM_PURCHASE)
 		{
 			cout << "Buyer " << customer << "\t";
 
 			item = rand() % storage.size();
-			srand(storage.size());
+			srand(time(NULL));
 			cout << "bought " << storage[item].GetModel() << " size " << storage[item].GetSize() << "\n";
 
 			buyers[customer].SetPurchase(storage[item]);
@@ -100,7 +100,7 @@ bool Store::ShowCustomers(void)
 				isEmpty = false;
 				temp = buyers[i].GetPurchase(j);
 				cout << "Purchase of customer " << i << "\t";
-				cout << "model: " << buyers[i].GetPurchase(j).GetModel() << "size " << temp.GetSize();
+				cout << "model: " << buyers[i].GetPurchase(j).GetModel() << "size " << temp.GetSize() << "\n\n";
 			}
 
 		}
