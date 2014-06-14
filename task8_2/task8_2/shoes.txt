@@ -1,0 +1,23 @@
+<shoe>
+<model>
+Abibas Nice
+<model/>
+<size>
+10
+<size/>
+<quantity>
+3
+<quantity/>
+<shoe/>
+
+<shoe>
+<model>
+Nike
+<model/>
+<size>
+15
+<size/>
+<quantity>
+2
+<quantity/>
+<shoe/>
